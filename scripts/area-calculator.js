@@ -12,6 +12,9 @@ function calculateTriangleArea() {
     const triangleAreaField = document.getElementById('triangle-area');
     triangleAreaField.innerText = area;
 
+      // set
+      addToCalculateEntry('Triangle:', area);
+
 
 }
 
@@ -30,6 +33,9 @@ function calculateRectangleArea()
 
     const rectangleAreaField = document.getElementById('rectangle-area');
     rectangleAreaField.innerText = area;
+
+      // set
+      addToCalculateEntry('Rectangle:', area);
      
 }
 
@@ -48,6 +54,9 @@ function calculateParallelogramArea()
    const setAreaValue = setElementInnerText('parallelogram-area', area);
    console.log(setAreaValue);
 
+     // set
+     addToCalculateEntry('Paralelogram:', area);
+
 }
 
 function calculateEllipseArea()
@@ -62,6 +71,9 @@ function calculateEllipseArea()
     console.log(area.toFixed(2));
 
     setElementInnerText('ellipse-area',area);
+
+      // set
+      addToCalculateEntry('Ellispse:', area);
 }
 
 
@@ -73,6 +85,9 @@ function calculateRhombusArea()
     const area =0.5 * d1 * d2;
 
     setElementInnerText('rhombus-area', area);
+
+    // set
+    addToCalculateEntry('Rhombus:', area);
 }
 
 
@@ -95,6 +110,10 @@ function calculatePentagonArea()
     console.log(area);
 
     setElementInnerText('pentagon-area', area);
+
+    //set calculate to 
+    addToCalculateEntry('Pentagon:', area);
+
 }
 
 
@@ -115,6 +134,24 @@ function setElementInnerText(givenElementId, areaResult)
     elementField.innerText = areaResult;
     
 
+}
+
+// dynamically
+
+function addToCalculateEntry(areatype, area)
+{
+    console.log(areatype + ' ' + area);
+    const calculationEntry = document.getElementById('calculation-entry');
+    
+ 
+    const count = calculationEntry.childElementCount;
+
+    const p = document.createElement('p');
+    // adding a class into p tag
+    p.classList.add('my-4');
+    p.innerHTML =  `${count + 1}. ${areatype} ${area} cm<sup>2</sup> <button class="btn btn-sm btn-success py-2 px-4">Convert to meter?</button>`;
+
+    calculationEntry.appendChild(p);
 }
 
 
