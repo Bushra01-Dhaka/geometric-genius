@@ -20,7 +20,7 @@
         <!-- main container -->
         <div class="flex flex-col lg:flex-row gap-8">
             <!-- shape container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-2">
                 <!-- Triangle card  -->
                 <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img class="w-[50%] mx-auto" src="./images/triangle.png" alt="Shoes" /></figure>
@@ -28,10 +28,10 @@
                         <h2 class="card-title text-3xl">Triangle</h2>
                         <p>Area (A) = 0.5 X b X h</p>
                         <p>
-                            <input id="triangle-base" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                            <input id="triangle-base" class="border w-24 px-2 bg-gray-200 rounded" type="number"
                                 placeholder="base">
                             <span class="">cm</span>
-                            <input id="triangle-height" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                            <input id="triangle-height" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="number"
                                 placeholder="height">
                             <span class="">cm</span>
                         </p>
@@ -49,10 +49,10 @@
                         <h2 class="card-title text-3xl">Rectangle</h2>
                         <p>Area (A) = w X l</p>
                         <p>
-                            <input id="rectangle-width" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                            <input id="rectangle-width" class="border w-24 px-2 bg-gray-200 rounded" type="number"
                                 placeholder="width">
                             <span class="">cm</span>
-                            <input id="rectangle-length" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                            <input id="rectangle-length" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="number"
                                 placeholder="length">
                             <span class="">cm</span>
                         </p>
@@ -70,10 +70,10 @@
                         <h2 class="card-title text-3xl">Parallelogram</h2>
                         <p>Area (A) = b X h</p>
                         <p>
-                            <input id="parallelogram-base" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                            <input id="parallelogram-base" class="border w-24 px-2 bg-gray-200 rounded" type="number"
                                 placeholder="base">
                             <span class="">cm</span>
-                            <input id="parallelogram-height" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                            <input id="parallelogram-height" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="number"
                                 placeholder="heigth">
                             <span class="">cm</span>
                         </p>
@@ -92,10 +92,10 @@
                         <h2 class="card-title text-3xl">Ellipse</h2>
                         <p>Area (A) = πab</p>
                         <p>
-                            <input id="ellipse-a" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                            <input id="ellipse-a" class="border w-24 px-2 bg-gray-200 rounded" type="number"
                                 placeholder="a">
                             <span class="">cm</span>
-                            <input id="ellipse-b" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                            <input id="ellipse-b" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="number"
                                 placeholder="b">
                             <span class="">cm</span>
                         </p>
@@ -113,10 +113,10 @@
                         <h2 class="card-title text-3xl">Rhombus</h2>
                         <p>Area (A) = 0.5 X d1 X d2</p>
                         <p>
-                            <input id="rhombus-d1" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                            <input id="rhombus-d1" class="border w-24 px-2 bg-gray-200 rounded" type="number"
                                 placeholder="d1">
                             <span class="">cm</span>
-                            <input id="rhombus-d2" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                            <input id="rhombus-d2" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="number"
                                 placeholder="d2">
                             <span class="">cm</span>
                         </p>
@@ -165,7 +165,7 @@
 
             </div>
             <!-- area calculator container -->
-            <div class="w-[400px]">
+            <div class="w-[400px] px-8">
                 <div class="text-4xl">Area Calculator</div>
 
             </div>

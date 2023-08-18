@@ -83,6 +83,14 @@ function calculatePentagonArea()
     const b = getInputValue('pentagon-b');
     console.log(b);
 
+    // input validation using isNaN() or I can use correct input type like type='number'
+    if(isNaN(p) || isNaN(b))
+    {
+        alert("Please Provide  a number");
+        return;
+    }
+
+
     const area = 0.5 * p * b;
     console.log(area);
 
