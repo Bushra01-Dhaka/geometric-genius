@@ -106,36 +106,57 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-                <!-- card 2 -->
-                <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                 <!-- rhombus card -->
+                 <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="w-[50%] mx-auto" src="./images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title text-3xl">Rhombus</h2>
+                        <p>Area (A) = 0.5 X d1 X d2</p>
+                        <p>
+                            <input id="rhombus-d1" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                                placeholder="d1">
+                            <span class="">cm</span>
+                            <input id="rhombus-d2" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                                placeholder="d2">
+                            <span class="">cm</span>
+                        </p>
+                        <p class="text-xl">Area: <span id="rhombus-area">0</span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- card 3 -->
-                <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+
+                 <!-- pentagon card -->
+                 <div class="card w-80 bg-base-100 shadow-xl">
+                    <figure><img class="w-[50%] mx-auto" src="./images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title text-3xl">Pentagon</h2>
+                        <p>Area (A) = 0.5 X p X b</p>
+                        <p>
+                            <input id="pentagon-p" class="border w-24 px-2 bg-gray-200 rounded" type="text"
+                                placeholder="p">
+                            <span class="">cm</span>
+                            <input id="pentagon-b" class="border w-24 px-2 bg-gray-200 rounded ml-2" type="text"
+                                placeholder="b">
+                            <span class="">cm</span>
+                        </p>
+                        <p class="text-xl">Area: <span id="pentagon-area">0</span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+              
 
 
 

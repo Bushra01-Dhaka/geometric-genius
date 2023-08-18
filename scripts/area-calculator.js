@@ -65,6 +65,31 @@ function calculateEllipseArea()
 }
 
 
+function calculateRhombusArea()
+{
+    const d1 = getInputValue('rhombus-d1');
+    const d2 = getInputValue('rhombus-d2');
+
+    const area =0.5 * d1 * d2;
+
+    setElementInnerText('rhombus-area', area);
+}
+
+
+function calculatePentagonArea()
+{
+    const p = getInputValue('pentagon-p');
+    console.log(p);
+    const b = getInputValue('pentagon-b');
+    console.log(b);
+
+    const area = 0.5 * p * b;
+    console.log(area);
+
+    setElementInnerText('pentagon-area', area);
+}
+
+
 
 
 //common function for getting input data
